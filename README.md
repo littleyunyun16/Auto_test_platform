@@ -1,0 +1,2 @@
+# Auto_test_platform
+使用Django搭建接口自动化测试平台
