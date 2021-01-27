@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class ProductConfig(AppConfig):
+class ModuleConfig(AppConfig):
     name = 'apps.Module'

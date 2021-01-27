@@ -16,13 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from Auto_test_platform import views
-from apps.Module import proviews
+from apps.Module import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('login/', views.login,name='login'),
-    path('home/', views.home,name='home'),
-    path('logout/', views.logout,name='logout'),
     path('Sign/', include('apps.Sign.urls', namespace="course"))
 
 ]

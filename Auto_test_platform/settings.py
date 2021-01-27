@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.Interface.apps.ApitestConfig',
-    'apps.Module.apps.ProductConfig',
+    'apps.Module.apps.ModuleConfig',
     'apps.Sign.apps.SignConfig',
     'apps.Case.apps.CaseConfig',
     'apps.Plan.apps.PlanConfig',

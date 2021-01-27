@@ -1,11 +1,11 @@
 # Register your models here.
 from django.contrib import admin
-from apps.Module.models import Product  # 把product引入到当前环境
+from apps.Module.models import ModularTable  # 把product引入到当前环境
 
 
-class ProductAdmin(admin.ModelAdmin):
-    list_display = ['productname', 'productdesc', 'producter', 'create_time', 'id']
-    search_fields = ['productname','producter']
-    list_filter = ['productname']
-    admin.site.register(Product)  # 把产品模块注册到 Django admin 后台并能显示
+class ModelAdmin(admin.ModelAdmin):
+    list_display = ["id", "url", "Icon", "model_name"]
+    list_filter = ["model_name"]
+    search_fields = ["model_name"]
 
+admin.site.register(ModularTable, ModelAdmin)
