@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 __author__ = 'amy'
 __date__ = '2021/1/27 23:06'
-
+from apps.Module.models import ModularTable
+from apps.Configuration.models import UserPower
+import json
 
 def create_model(user_id):
     model = ModularTable.objects.all()

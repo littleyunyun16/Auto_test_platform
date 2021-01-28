@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'apps.Environment.apps.EnvironmentConfig',
     'apps.Report.apps.ReportConfig',
     'apps.Project.apps.ProjectConfig',
+    'apps.Configuration.apps.ConfigurationConfig',
     'djcelery'
 ]
 

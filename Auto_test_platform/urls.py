@@ -15,11 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from django.conf.urls import url
 from Auto_test_platform import views
 from apps.Module import views
+from Auto_test_platform import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    url(r'^login_action/$', view=views.login_action, name='login_action'),
     path('Sign/', include('apps.Sign.urls', namespace="course"))
 
 ]
